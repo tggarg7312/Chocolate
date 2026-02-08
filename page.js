@@ -1,2 +1,2 @@
-import Gate from "../components/Gate";
-export default function Home(){return <Gate/>;}
+import PasswordGate from "../../components/PasswordGate";
+export default function Password(){return <PasswordGate/>;}
