@@ -1,2 +1,2 @@
-import Gate from "../components/Gate";
-export default function Home(){return <Gate/>;}
+import PremiumScene from "../../components/PremiumScene";
+export default function Chocolate(){return <PremiumScene/>;}
