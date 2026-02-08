@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+  margin:0;
+  padding:0;
+  background:#120605;
+  color:white;
+  overflow-x:hidden;
+  font-family: ui-serif, Georgia, Cambria, serif;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  width:200%;
+  height:200%;
+  top:-50%;
+  left:-50%;
+  background:radial-gradient(circle, rgba(255,120,90,0.15), transparent 60%);
+  animation:spin 18s linear infinite;
+  z-index:-1;
+}
+
+@keyframes spin{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+
+.glass{
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.gold-text{
+  background: linear-gradient(120deg,#ffd89b,#fff5cc,#ffd89b);
+  background-size:200% auto;
+  color:transparent;
+  -webkit-background-clip:text;
+  animation: shimmer 4s linear infinite;
+}
